@@ -1,0 +1,14 @@
+# Default owner for all files
+* @Nitheesh-NR-Labs
+
+# Hardware design files
+/hardware/ @Nitheesh-NR-Labs
+
+# Firmware source files
+/firmware/ @Nitheesh-NR-Labs
+
+# Documentation
+/docs/ @Nitheesh-NR-Labs
+
+# GitHub configuration
+/.github/ @Nitheesh-NR-Labs

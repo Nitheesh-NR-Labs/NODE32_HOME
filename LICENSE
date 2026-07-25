@@ -1,29 +1,68 @@
-ESP_HOME Hardware and Documentation
-Copyright (c) 2026 Nitheesh NR Labs
+# License Information
 
-This project is licensed under the CERN Open Hardware License Version 2 - Strongly Reciprocal (CERN-OHL-S v2).
-
-You may redistribute and modify this documentation and hardware design files under the terms of the CERN-OHL-S v2.
-
-Source location: https://github.com/Nitheesh-NR-Labs/ESP_HOME
-
-Any modified versions of this design must:
-
-* retain this copyright notice
-* retain the CERN-OHL-S license notice
-* make the modified design files publicly available under the same license
-
-This ensures that improvements to the design remain open and accessible to the community.
+The ESP_HOME project uses a dual-licensing model to accommodate both hardware and software contributions.
 
 ---
 
-CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+## Hardware Designs (CERN-OHL-S v2)
 
-Preamble
+All hardware design files including PCB layouts, schematics, Gerber files, bills of materials, and 3D models are licensed under the **CERN Open Hardware License Version 2 — Strongly Reciprocal (CERN-OHL-S v2)**.
 
-The CERN Open Hardware Licence is a licence for the design of hardware and related documentation. The licence grants permission to use, study, modify, share and distribute hardware designs and products based on those designs.
+NODE32_HOME Hardware and Documentation
+Copyright (c) 2026 Nitheesh NR Labs
 
-This licence ensures that if you distribute modified versions of the design or products based on it, you must make the modified design documentation available under the same licence.
+This hardware design is licensed under the CERN Open Hardware License Version 2 - Strongly Reciprocal (CERN-OHL-S v2).
+
+You may redistribute and modify this documentation and hardware design files under the terms of the CERN-OHL-S v2.
+
+Source location: https://github.com/Nitheesh-NR-Labs/NODE32_HOME
 
 Full license text:
-https://gitlab.com/ohwr/project/cernohl/-/wikis/Documents/CERN-OHL-version-2
+https://ohwr.org/cern_ohl_s_v2.txt
+
+### Summary
+
+- You may use, copy, modify, and distribute the hardware design
+- If you distribute modified versions, you must make the modified design files publicly available under the same license
+- The license applies to the hardware design documentation, not to products manufactured from it
+- This ensures that improvements to the design remain open and accessible to the community
+
+---
+
+## Firmware, Software, and Documentation (MIT License)
+
+All firmware source code, software applications, and documentation (unless otherwise noted) are licensed under the MIT License.
+
+MIT License
+
+Copyright (c) 2026 Nitheesh NR Labs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Clarification
+
+- **Hardware files** (`.sch`, `.pcb`, `.brd`, Gerber, BOM, 3D models): CERN-OHL-S v2
+- **Firmware files** (`.c`, `.cpp`, `.h`, `.ini`, PlatformIO configs): MIT
+- **Software files** (source code for applications, tools, scripts): MIT
+- **Documentation files** (`.md`, `.pdf`, `.txt`, images): MIT
+- **Datasheets and reference materials** from component manufacturers: Subject to their respective licenses
+
+If a file does not explicitly state its license, refer to the directory-level or repository-level license applicable to its category.

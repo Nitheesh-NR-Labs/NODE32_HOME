@@ -23,7 +23,7 @@
 
 * Bluetooth Version: Bluetooth 4.2 BR/EDR + BLE
 * BLE Supported Profiles: GATT, GAP
-* Use Case in ESP_HOME: device provisioning, future mobile configuration support
+* Use Case in NODE32_HOME: device provisioning, future mobile configuration support
 
 **ESP-NOW Communication**
 
@@ -55,9 +55,9 @@
   * DAC
   * Touch sensing
 
-### Role in ESP_HOME Architecture
+### Role in NODE32_HOME Architecture
 
-The ESP32-WROOM-32E-N16 module serves as the **central hub controller** in the ESP_HOME system. Its responsibilities include:
+The ESP32-WROOM-32E-N16 module serves as the **central hub controller** in the NODE32_HOME system. Its responsibilities include:
 
 * Managing the ESP-NOW wireless network
 * Communicating with distributed relay and sensor nodes
