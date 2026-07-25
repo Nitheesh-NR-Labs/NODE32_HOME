@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Nitheesh-NR-Labs.github.io/NODE32_HOME/sitemap.xml

@@ -32,3 +32,8 @@ Thumbs.db
 dist/
 build/
 node_modules/
+
+# Next.js build artifacts
+.next/
+website/out/
+website/node_modules/
