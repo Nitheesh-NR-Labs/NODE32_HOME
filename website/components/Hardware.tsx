@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Cpu, Zap, Table2, Package, Gauge } from "lucide-react";
+import { ExternalLink, Cpu, Zap, Table2, Package, Gauge, Download, FileCode2 } from "lucide-react";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Button } from "@/components/Button";
 import { siteConfig } from "@/data/site";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 
 function SpecTable({ specs }: { specs: { label: string; value: string }[] }) {
   return (
@@ -154,6 +154,18 @@ export function Hardware() {
             </div>
 
             <div className="p-6 sm:p-8 space-y-10">
+              {/* Board Images */}
+              {"images" in board && board.images && (
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <a href={asset(board.images.board)} target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] aspect-video">
+                    <img src={asset(board.images.board)} alt={`${board.name} photo`} className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" />
+                  </a>
+                  <a href={asset(board.images.cad)} target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] aspect-video">
+                    <img src={asset(board.images.cad)} alt={`${board.name} CAD view`} className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" />
+                  </a>
+                </div>
+              )}
+
               {/* MCU & Features */}
               <div className="grid gap-6 lg:grid-cols-3">
                 <div className="lg:col-span-1">
@@ -288,10 +300,43 @@ export function Hardware() {
                 </div>
               )}
 
+              {/* EasyEDA Download (mainboard only) */}
+              {"easyedaDownload" in board && board.easyedaDownload && (
+                <div className="rounded-2xl border border-blue-500/20 bg-blue-600/[0.03] p-6 sm:p-8">
+                  <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-start gap-4">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/10">
+                        <FileCode2 className="h-6 w-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-semibold">EasyEDA Pro Project</h4>
+                        <p className="mt-1 text-xs text-muted-foreground max-w-md">
+                          Download the complete EasyEDA Pro source project including schematic, PCB layout, and all design files. Open in EasyEDA Pro via File &rarr; Open &rarr; select the extracted <code className="rounded bg-white/[0.05] px-1 py-0.5 font-mono text-[10px]">.epro</code> folder.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3 shrink-0">
+                      <a
+                        href={asset(board.easyedaDownload)}
+                        download
+                        className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 text-white hover:bg-blue-500 active:bg-blue-700 shadow-lg shadow-blue-600/20 px-4 py-2 text-sm font-medium transition-all duration-200"
+                      >
+                        <Download className="h-4 w-4" />
+                        Download (1.5 MB)
+                      </a>
+                      <Button as="a" href="https://easyeda.com/page/download" variant="outline" size="sm">
+                        Get EasyEDA Pro
+                        <ExternalLink className="h-3.5 w-3.5" />
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* View Hardware Button */}
               <div className="flex">
                 <Button as="a" href={board.href} variant="secondary" size="sm">
-                  View Hardware Files
+                  View Hardware Files on GitHub
                   <ExternalLink className="h-3.5 w-3.5" />
                 </Button>
               </div>

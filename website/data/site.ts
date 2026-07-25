@@ -95,6 +95,11 @@ export const siteConfig = {
         { pin: "IO4", function: "I2C_6PIN Interrupt", type: "Input", notes: "Available on 6-pin I2C header" },
         { pin: "IO13", function: "I2C_6PIN CS/GPIO", type: "I/O", notes: "Available on 6-pin I2C header" },
       ],
+      images: {
+        board: "/images/MAIN_BOARD.png",
+        cad: "/images/MAIN_BOARD_CAD.png",
+      },
+      easyedaDownload: "/downloads/ESP_HOME.zip",
       href: "https://github.com/Nitheesh-NR-Labs/NODE32_HOME/tree/main/hardware/NODE32_HOME_MAINBOARD_V1",
     },
     {
@@ -133,6 +138,10 @@ export const siteConfig = {
         { part: "G5CA-1A-E-DC5", manufacturer: "Omron Electronics", function: "5V 15A SPST-NO power relay", qty: 1 },
         { part: "HLK-PM01", manufacturer: "Hi-Link", function: "AC-DC isolated 5V power module", qty: 1 },
       ],
+      images: {
+        board: "/images/NODE_BOARD.png",
+        cad: "/images/NODE_BOARD_CAD.png",
+      },
       href: "https://github.com/Nitheesh-NR-Labs/NODE32_HOME/tree/main/hardware/RELAY_NODE_V1",
     },
   ],
