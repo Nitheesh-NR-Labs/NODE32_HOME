@@ -5,9 +5,4 @@
 
 [build.environment]
   NEXT_PUBLIC_BASE_PATH = ""
-  NEXT_PUBLIC_SITE_URL = "https://esp-home.netlify.app"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  NEXT_PUBLIC_SITE_URL = "https://node32-home.netlify.app"
