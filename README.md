@@ -9,6 +9,8 @@
 # ESP_HOME Ecosystem
 
 *Open-source smart home hardware and firmware for the ESP8266 and ESP32 ecosystem.*
+</br>
+*THE EASYEDA FILE CAN BE FOUND IN THE FILES FOLDER*
 
 [![License: CERN-OHL-S v2](https://img.shields.io/badge/Hardware-CERN--OHL--S--v2-blue.svg)](LICENSE)
 [![License: MIT](https://img.shields.io/badge/Software-MIT-green.svg)](LICENSE)
