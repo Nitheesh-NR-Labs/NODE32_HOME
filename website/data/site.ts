@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Open-source smart home hardware and firmware for the ESP ecosystem.",
   description:
     "NODE32_HOME is the primary controller board of the ESP_HOME ecosystem \u2014 an open-source smart home platform built around modular hardware, firmware, software, and community collaboration.",
-  url: "https://Nitheesh-NR-Labs.github.io/NODE32_HOME",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://Nitheesh-NR-Labs.github.io/NODE32_HOME",
   githubUrl: "https://github.com/Nitheesh-NR-Labs/NODE32_HOME",
   githubDiscussions: "https://github.com/Nitheesh-NR-Labs/NODE32_HOME/discussions",
   githubIssues: "https://github.com/Nitheesh-NR-Labs/NODE32_HOME/issues",
